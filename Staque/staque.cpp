@@ -73,11 +73,11 @@ bool staque::emptyCheck() const {
     return false;
 }
 
-void staque::output(ostream& o) const {
+void staque::output(ostream& val) const {
 	node* ptr;
 	cout << "In the front ";
 	for (ptr = start; ptr != 0; ptr = ptr->following) {
-		o << ptr->data << " ";
+		val << ptr->data << " ";
 	}
 	cout << " in the back\n";
 }
