@@ -18,7 +18,8 @@ class staque{
     staque(); /*constructor*/
     staque(const staque & orig); /*constructor(copy)*/
     ~staque(); /*destructor*/
-    public:
+    
+    private:
     class node {
         public:
         int data;
@@ -34,18 +35,20 @@ class staque{
     node * end;
     
     
-
-    /*Private Functions, their names are descriptive*/
+    
+    /*Private Functions, their names are descriptive*/          
     void pushFront(const int val);
     void pushBack(const int val);
     void removeBack();
     void removeFront();
     void outputText(staque::node * val);
+    void noThrow(staque::node * val, int i, const int val1);
     
     
 };
 
 /*For overloading purposes*/
     ostream& operator<<(ostream& val1, const staque& val2);
+    
 void clearInput();
 #endif

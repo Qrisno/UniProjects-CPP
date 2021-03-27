@@ -46,7 +46,7 @@ staque stack4 = stack2;/*switch*/
     cout << stack1 << stack2 << stack3 << stack4;
     for(int i = 0;i<4;i++){
         array[i].lifoRemoval();
-        cout << array[i];
+        cout << array[i]<<endl;
     }
 
     return 0;

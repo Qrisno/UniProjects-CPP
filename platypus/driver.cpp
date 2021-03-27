@@ -1,5 +1,5 @@
 #include "./header.h"
-#include "./new.cpp"
+#include "./main.cpp"
 #include <iostream>
 
 //Driver function
